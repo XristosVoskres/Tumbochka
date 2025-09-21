@@ -1,0 +1,4 @@
+repository "Tumbochka 2025-09-21_15-27-31/Tumbochka@10171148924248@cloud"
+  path "/"
+    br "/main"
+    co "/main"
