@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class Raycast : MonoBehaviour
@@ -25,10 +27,7 @@ public class Raycast : MonoBehaviour
 
     }
 
-    void Start()
-    {
-        
-    }
+
     void Update()
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -55,7 +54,7 @@ public class Raycast : MonoBehaviour
                 secondAnimPolka.SetBool("inBox2", false);
             }
 
-             if (hit.collider.gameObject.tag == "polka3")
+            if (hit.collider.gameObject.tag == "polka3")
             {
                 thirdAnimPolka.SetBool("inBox3", true);
             }
@@ -65,32 +64,9 @@ public class Raycast : MonoBehaviour
             }
         }
     }
-    
-    
-}
 
-    
-    // if (startTime <= 1)
-                // {
-                //     boolTime = true;
-                //     startTime += Time.deltaTime;
-                //     firstPolka.transform.position = new Vector3(transform.position.x + startTime, 0.6666666f, transform.position.z);
-                // }
-                // else{firstPolka.transform.position = new Vector3(startTime, 0.6666666f, transform.position.z);}
-
-                // firstPolka.position = new Vector3()
-
-    // void Moving () {
+  
         
-    // }
-    
-            // Animator animator = hit.collider.GetComponent<Animator>();
-
-            // If the hit object has an Animator and its collider is a trigger...
-            // if (animator != null && hit.collider.isTrigger)
-            // {
-            //     // ...set the boolean parameter in the Animator to true.
-            //     animator.SetBool("inColider", true);
-            // }
+}
 
 
