@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - polka1
+  - polka2
+  - polka3
   layers:
   - Default
   - TransparentFX
