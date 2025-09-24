@@ -1,28 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
+// using UnityEngine.UI;
+// using UnityEngine.SceneManagement;
 
-public class CanvasButton : MonoBehaviour
-{
+// public class CanvasButton : MonoBehaviour
+// {
 
-    void Start()
-    {
+//     void Start()
+//     {
 
-    }
+//     }
 
-    // Update is called once per frame
-    void Update()
-    {
+//     // Update is called once per frame
+//     void Update()
+//     {
         
-    }
-    public void ButtonStart()
-    {
+//     }
+//     public void ButtonStart()
+//     {
         
-    }
-    public void ButtonSeting()
-    {
+//     }
+//     public void ButtonSeting()
+//     {
 
-    }
-}
+//     }
+// }
