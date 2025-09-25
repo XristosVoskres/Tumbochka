@@ -4,32 +4,36 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ButtonOnTumba : Raycast
+public class ButtonOnTumba : MonoBehaviour
 {
+
+  
+    public Animator animPanel;
 
     public Animator camAnim;
 
-    void Update()
-    {
-
-    }
+    
     public void ButtonStart()
     {
 
-        camAnim.SetInteger("selButton", 1);
-        Invoke("CallMethodSwapScene", 1f);
+        camAnim.SetBool("selFirst", true);
+        animPanel.SetBool("closePanel", true);
+        Invoke("CallMethodSwapScene", 2f);
 
     }
 
     public void ButtonSeting()
     {
-        camAnim.SetInteger("selButton", 2);
+        camAnim.SetBool("selSecond", true);
+        animPanel.SetBool("closePanel", true);
+        
     }
 
     public void ButtonExit()
     {
-        camAnim.SetInteger("selButton", 3);
-        Invoke("CallMethodQuit", 1f);
+        camAnim.SetBool("selThird", true);
+        animPanel.SetBool("closePanel", true);
+        Invoke("CallMethodQuit", 2f);
     }
 
     public void CallMethodQuit()
