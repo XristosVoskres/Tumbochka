@@ -29,7 +29,6 @@ public class DialogeWindow : MonoBehaviour
             if (!DialogWindow.activeSelf)
             {
                 DialogWindow.SetActive(true);
-                DialogText.SetActive(true);
                 currentLine = 0;
                 DialogText.text = dialogLines[currentLine];
             }
@@ -43,7 +42,6 @@ public class DialogeWindow : MonoBehaviour
                 else
                 {
                     DialogWindow.SetActive(false);
-                    DialogText.SetActive(false);
                 }
             }
         }
