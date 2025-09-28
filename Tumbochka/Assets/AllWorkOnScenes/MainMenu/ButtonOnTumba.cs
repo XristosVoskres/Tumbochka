@@ -7,15 +7,15 @@ using UnityEngine.SceneManagement;
 public class ButtonOnTumbaTheme : MonoBehaviour
 {
 
-    
+
     public Animator animPanel_Theme;
 
     public Animator camAnim_Theme;
 
-    
+
     public void ButtonStart()
     {
-    
+
         camAnim_Theme.SetBool("selFirst", true);
         animPanel_Theme.SetBool("closePanel", true);
         Invoke("CallMethodSwapScene", 2f);
@@ -26,6 +26,7 @@ public class ButtonOnTumbaTheme : MonoBehaviour
     {
         camAnim_Theme.SetBool("selSecond", true);
         animPanel_Theme.SetBool("closePanel", true);
+        Invoke("CallMethodSeting", 2f);
         
     }
 
@@ -44,5 +45,9 @@ public class ButtonOnTumbaTheme : MonoBehaviour
     public void CallMethodSwapScene()
     {
         SceneManager.LoadScene("Scenes/ChooseTheme");
+    }
+    public void CallMethodSeting()
+    {
+        SceneManager.LoadScene("Scenes/SetingsScene");
     }
 }

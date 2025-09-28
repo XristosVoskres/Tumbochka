@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChooseTheme.unity
     guid: 21fbe3d38ac556d42b865d72a094242b
+  - enabled: 1
+    path: Assets/Scenes/KreditGame.unity
+    guid: cae615b589b0abd408a93bb46cfd9261
+  - enabled: 1
+    path: Assets/Scenes/SetingsScene.unity
+    guid: 928067fbd4ae2314a9c618fac465f797
+  - enabled: 1
+    path: Assets/Scenes/QuizScene.unity
+    guid: 7a879622e5038ec42872a5c51a83e101
   m_configObjects: {}

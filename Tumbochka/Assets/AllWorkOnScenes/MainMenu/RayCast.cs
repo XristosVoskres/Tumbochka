@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class Raycast : ButtonOnTumba
+public class Raycast : ButtonOnTumbaTheme
 {
 
     public GameObject firstPolka_theme;
